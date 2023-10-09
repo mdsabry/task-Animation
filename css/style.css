@@ -1,0 +1,339 @@
+body {
+    font-family:'Gill Sans', 'GillSans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    margin: 10px;
+}
+
+h1 {
+    text-align: center;
+    border: 1px solid ;
+    width: fit-content;
+    margin: auto;
+    padding: 15px 25px;
+    margin-top: 10px;
+    background-color: #1e4d9e;
+    color: white;
+    font-weight: bold;
+}
+
+.box {
+    margin-top: 30px;
+    border-radius: 12px;
+    width: 350px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 34px;
+    position: absolute;
+    color: #1e4d9e;
+    border: 1px solid #4877c9;
+}
+
+.item {
+    position: relative;
+}
+
+.item .logo.html,
+.item .logo.html5,
+.item .logo.javascript,
+.item .logo.github{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 50%;
+    animation-name: logo;
+    animation-duration: 4s;
+}
+
+
+.item .logo.html {
+    background-image: url(../images/html.jfif);
+}
+.item .logo.html5 {
+    background-image: url(../images/html5.png);
+}
+.item .logo.javascript {
+    background-image: url(../images/js.png);
+}
+.item .logo.github {
+    background-image: url(../images/git.png);
+}
+.item .logo.css {
+    background-image: url(../images/css.png);
+}
+.item .logo.css3 {
+    background-image: url(../images/css3.png);
+}
+.item .logo.bootstrap {
+    background-image: url(../images/bootstrap.jfif);
+}
+.item .logo.reactjs {
+    background-image: url(../images/react.png);
+}
+
+/* -------------- */
+
+.item .logo.html,
+.item .logo.html5,
+.item .logo.javascript,
+.item .logo.github,
+.item .logo.css,
+.item .logo.css3,
+.item .logo.bootstrap,
+.item .logo.reactjs {
+    animation-fill-mode: forwards;
+    background-size: cover;
+}
+
+.item .logo.css,
+.item .logo.css3,
+.item .logo.bootstrap,
+.item .logo.reactjs{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 50%;
+    animation-name: logo2;
+    animation-duration: 4s;
+}
+
+.html,
+.html5,
+.javascript,
+.github{
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    left: 0;
+    opacity: 1;
+}
+.css,
+.css3,
+.bootstrap,
+.reactjs {
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    right: 0;
+    opacity: 1;
+}
+
+
+.html {
+    animation-name: html;
+}
+
+.css {
+    animation-name: css;
+    animation-delay: 3s;
+}
+
+.html5 {
+    animation-name: html5;
+    animation-delay: 6s;
+}
+
+.css3 {
+    animation-name: css3;
+    animation-delay: 9s;
+}
+
+.javascript {
+    animation-name: javascript;
+    animation-delay: 12s;
+}
+
+.bootstrap {
+    animation-name: bootstrap;
+    animation-delay: 15s;
+}
+
+.github {
+    animation-name: github;
+    animation-delay: 18s;
+}
+
+.reactjs {
+    animation-name: reactjs;
+    animation-delay: 21s;
+}
+
+
+@keyframes html {
+    0% {
+        opacity: 1;
+        left: 10px;
+    }
+    
+    50% {
+        background-color: #a9c3f1;
+    }
+
+    100% {
+        left: calc(100vw - 390px) ;
+        opacity: 1;
+    }
+}
+
+@keyframes logo {
+    0% {
+        left: 10px;
+    }
+    50% {
+        background-color: #a9c3f1;
+    }
+    100% {
+        left: calc(100% - 70px) ;
+        
+
+    }
+}
+
+@keyframes logo2 {
+    0% {
+        right: 10px;
+    }
+    50% {
+        background-color: #a9c3f1;
+    }
+    100% {
+        right: calc(100% - 70px) ;
+        
+
+    }
+}
+
+@keyframes css {
+    0% {
+        right: 10px;
+    }
+    50% {
+        background-color: #a9c3f1;
+    }
+    100% {
+        right: calc(100vw - 390px) ;
+    }
+}
+
+@keyframes html5 {
+    0% {
+        left: 10px;
+    }
+    50% {
+        background-color: #a9c3f1;
+    }
+    100% {
+        left: calc(100vw - 390px) ;
+    }
+}
+
+@keyframes css3 {
+    0% {
+        right: 10px;
+    }
+    50% {
+        background-color: #a9c3f1;
+    }
+    100% {
+        right: calc(100vw - 390px) ;
+    }
+}
+
+@keyframes javascript {
+    0% {
+        left: 10px;
+    }
+    50% {
+        background-color: #a9c3f1;
+    }
+    100% {
+        left: calc(100vw - 390px) ;
+    }
+}
+
+@keyframes bootstrap {
+    0% {
+        right: 10px;
+    }
+    50% {
+        background-color: #a9c3f1;
+    }
+    100% {
+        right: calc(100vw - 390px) ;
+    }
+}
+
+@keyframes github {
+    0% {
+        left: 10px;
+    }
+    50% {
+        background-color: #a9c3f1;
+    }
+    100% {
+        left: calc(100vw - 390px) ;
+    }
+}
+
+@keyframes reactjs {
+    0% {
+        right: 10px;
+    }
+    50% {
+        background-color: #a9c3f1;
+    }
+    100% {
+        right: calc(100vw - 390px) ;
+    }
+}
+
+
+.css {
+    top: 80px;
+}
+
+.html5 {
+    top:160px;
+}
+
+.css3 {
+    top: 240px;
+}
+
+.javascript {
+    top: 320px;
+}
+
+.bootstrap {
+    top: 400px;
+}
+
+.github {
+    top: 480px;
+}
+
+.reactjs {
+    top: 560px;
+}
